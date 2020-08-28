@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Register_Page</title>
+    <link rel="stylesheet" href="stylesheet/login.css"  type="text/css">
+  </head>
+  <body>
+ <div>
+   <h1><span>a</span>dash</h1>
+   <h3>Register with Adash account</h3>
+  <form action="/user/register" method="POST">
+    <input type="text"name="username" id="username" placeholder="Username">
+    <input type="text" name="email" id="email" placeholder="Email">
+    <input type="password" name="password" id="password" placeholder="password">
+    <button type="submit" id="login">Register</button>
+  </form>
+  <a id="link" href="/user/login">Already have an account......</a>
+ </div>
+ <style>
+    html{
+     box-sizing: border-box;
+   }
+   body{
+     background:rgb(255, 255, 255);
+     font-family: Arial, Helvetica, sans-serif;
+   }
+   div{
+     position:absolute;
+     top: 50%;  
+     right: 30%;  
+     transform: translate(-50%, -50%);  
+     margin:auto;
+     width: 300px;
+     height: auto;
+     background: rgb(255, 252, 236);
+     box-shadow: 2px 2px  5px 1px  rgb(146, 143, 143);
+    }
+    div h1{
+      font-weight: 500;
+      font-size: 30px;
+      text-align: center;
+      margin:0;
+      margin-top: 25px;
+      padding:0;
+        }
+      div h1 span{
+        color: rgb(19, 78, 145);
+      }
+    div h3{
+      font-style: normal;
+      font-size:10px;
+      color:rgb(53, 51, 51);
+      text-align: center;
+      padding: 0;
+      margin: 0;
+      margin-bottom: 50px;
+    }
+    div form{
+      display: flex;
+      flex-direction: column;
+    }
+    div form input{
+      border: none;
+      outline: none;
+      border-bottom:1px solid rgb(168, 161, 161);
+      text-align:center;
+      margin:25px auto;
+      background:rgb(255, 252, 236);
+      font: normal;
+      font-size: 12px;
+      display: block;
+      width: 80%;
+    }
+    div form input::placeholder{
+      text-align: start;
+      color:rgb(129, 127, 127);
+      padding:2px 0px;
+    }
+    div form button{
+      text-align: center;
+      margin:10px auto;
+      width: 80%;
+      background: rgb(190, 191, 192);
+      font-size: 15px;
+      font-weight: 600;
+      color:rgb(139, 139, 136);
+      border: none;
+      padding-top: 7px;
+      padding-bottom: 7px;
+    }
+    #link{
+      text-decoration: none;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      color: #07689f;
+    }
+    
+ </style>
+  </body>
+</html>
+

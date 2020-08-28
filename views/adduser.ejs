@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Add user</title>
+  </head>
+  <body>
+ <div>
+   <div id="header">
+     <h1>Username</h1>
+   </div>
+     <div id="section"> 
+         <h3>Add user</h3>
+         <button><a href="/user/dashboard">BACK</a></button>
+    </div>
+  <div id="form">
+  <form action="/user/adduser" method="POST">
+    
+    <input type="text" name="email" id="email" placeholder="Email">
+    <input type="text" name="fullname" id="fullname" placeholder="Fullname">
+    <input type="password" name="password" id="password" placeholder="password">
+    <input type="text" name="userrole" id="userrole" placeholder="userrole">
+   <div id="button"> 
+     <button id="button1" type="submit" >SUBMIT</button>
+    <button id="button2" type="reset" >RESET</button>
+  </div>
+  </form>
+</div>
+ </div>
+  </body>
+  <style>
+    html{
+      box-sizing: border-box;
+
+    }
+    body{
+      background: rgb(252, 246, 226);
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    #header{
+        width: 100%;
+        height: 10%;
+    }
+    #header h1{
+      text-align: right;
+      font-size: 15px;
+      color: rgb(128, 133, 133);
+    }
+    #section{
+      width: 100%;
+      height: 130px;
+      background: #07689f;
+      display:flex;
+      justify-content: space-between;
+    }
+    #section h3{
+      font-size: 15px;
+      margin-top: 20px;
+      margin-left: 10px;
+      color: rgb(218, 236, 236);
+    }
+    #section button{
+      border: none;
+      margin: auto;
+      margin-top: 20px;
+      margin-right: 10px;
+      background: rgb(218, 236, 236);
+      text-decoration: none;
+      padding: 2px 3px;
+    }
+    #section button a {
+      list-style: none;
+      font-size: 10px;
+      padding:2px 3px;
+      font-weight: 700;
+      text-decoration: none;
+      color: rgb(123, 129, 129);
+    }
+   #form{
+     width:95%;
+     height: 500px;
+     background:rgb(243, 236, 236);
+     margin:0 auto;
+     border-radius: 16px;
+     margin-top: -50px;
+   }
+   #form form{
+     display: flex;
+     flex-direction: column;
+   }
+   #form form input{
+     display: block;
+     margin: 20px 35px;
+     padding:13px 0px;
+     border-radius: 10px;
+     border:none;
+     outline: none;
+     border:1px solid rgb(223, 212, 212);
+   }
+   #form form input::placeholder{
+     font-size: 15px;
+     color: rgb(168, 165, 164);
+     padding-left: 10px;
+     font-weight: 500;
+   }
+   #button{
+     text-align: center;
+     margin-top: 30px;
+ 
+
+   }
+   #button1{
+     background:#07689f;
+     color: white;
+     font-weight: 400;
+     font-size: 10px;
+     font-style: normal;
+     border:none;
+     padding: 4px 6px;
+     
+
+   }
+   #button2{
+    background:rgb(187, 187, 194);
+     color: rgb(133, 128, 128);
+     font-weight: 400;
+     font-size: 10px;
+     font-style: normal;
+     border:none;
+     padding: 4px 6px;
+     margin-left: 5px;
+
+   }
+
+  </style>
+</html>
